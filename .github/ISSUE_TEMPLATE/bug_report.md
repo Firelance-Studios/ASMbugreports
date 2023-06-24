@@ -29,9 +29,3 @@ body:
       3. See error
   validations:
     required: true
-- type: input
-  attributes:
-    label: Operating System
-    description: (Optional&#58; Only if OS Specific)
-  validations:
-    required: false
