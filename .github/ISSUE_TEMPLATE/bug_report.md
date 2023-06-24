@@ -1,31 +1,37 @@
 name: Bug Report
 description: Submit a bug
 title: "Bug: <Title>"
-labels: ["Bug"]
+labels: ["Type: bug"]
 body:
-type: textarea
+- type: textarea
   attributes:
     label: Describe the bug
-    description: A clear description of what the bug is. Pictures/videos are great!
+    description: A clear description of what the bug is. Feel free to add pictures or videos (They really help!)
     placeholder: |
       When I do X then Y happens.
   validations:
     required: true
-type: textarea
+- type: textarea
   attributes:
     label: Issue Map
     description: A map that the issue occurs on. 
     placeholder: |
-      What map does this bug happen on?
+      Please explicitly state what map the issue occurs on. If this is not a default map, include a download link to the BSP, VMF, or both.
   validations:
     required: true
-type: textarea
+- type: textarea
   attributes:
     label: To Reproduce
     description: Steps to reproduce the behavior
     placeholder: |
-      1. Open map [...]
-      2. Do [...]
-      3. Error occurs
+      1. Open map ...
+      2. Do ...
+      3. See error
   validations:
     required: true
+- type: input
+  attributes:
+    label: Operating System
+    description: (Optional&#58; Only if OS Specific)
+  validations:
+    required: false
