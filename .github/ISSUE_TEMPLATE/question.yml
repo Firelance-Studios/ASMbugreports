@@ -1,1 +1,20 @@
+name: Question
+description: Submit a question
+title: "Question: <Title>"
+labels: ["Type: Question"]
+body:
+- type: dropdown
+  attributes:
+    label: What is your question about?
+    options: [Gameplay, Audio, Puzzles, Story, Development, Other]
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: What is your question?
+    description: Tell us! And we will do our best to answer.
+    placeholder: |
+      "Why is ONEKO orange?"
+  validations:
+    required: true
 
