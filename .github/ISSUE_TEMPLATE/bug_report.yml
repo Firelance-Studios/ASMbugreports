@@ -3,6 +3,12 @@ description: Submit a bug
 title: "Bug: <Title>"
 labels: ["Type: Bug"]
 body:
+- type: dropdown
+  attributes:
+    label: What kind of problem is it?
+    options: [Bug, Exploit, Other]
+  validations:
+    required: true
 - type: textarea
   attributes:
     label: Describe the bug
@@ -18,7 +24,7 @@ body:
     placeholder: |
       Please explicitly state what map the issue occurs on.
   validations:
-    required: true
+    required: false
 - type: textarea
   attributes:
     label: To Reproduce
