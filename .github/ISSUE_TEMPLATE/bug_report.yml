@@ -14,7 +14,7 @@ body:
     label: Describe the bug
     description: A clear description of what the bug is. Pictures are great!
     placeholder: |
-      *When I do X then Y happens.*
+      When I do X then Y happens.
   validations:
     required: true
 - type: textarea
