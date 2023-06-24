@@ -1,7 +1,7 @@
 name: Feature Request
 description: Suggest a feature
 title: "Feature: <Title>"
-labels: ["Suggestion"]
+labels: ["Type: Suggestion"]
 body:
 - type: dropdown
   attributes:
