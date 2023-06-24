@@ -1,0 +1,20 @@
+name: Feature Request
+description: Suggest a feature
+title: "Feature: <Title>"
+labels: ["Suggestion"]
+body:
+- type: dropdown
+  attributes:
+    label: What does your suggestion affect?
+    options: [Gameplay, Audio, UI/UX, Puzzle, Engine, Steam, Other]
+  validations:
+    required: true
+- type: textarea
+  attributes:
+    label: Describe your suggestion
+    description: Give a clear explanation of what you want us to add. Feel free to add pictures or video!
+    placeholder: |
+      Please don't give vague suggestions like "Make puzzle better"!
+      Think; "why is it currently flawed? What could be a step to fixing it?"
+  validations:
+    required: true
